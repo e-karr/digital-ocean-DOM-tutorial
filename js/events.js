@@ -4,3 +4,7 @@ const changeText = () => {
 
 	p.textContent = "I changed because of an inline event handler.";
 }
+
+// Add event handler as a property of the button element
+const button = document.querySelector('button');
+button.onclick = changeText;
